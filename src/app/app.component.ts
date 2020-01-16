@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'algamoney-ui';
+  lancamentos = [
+  {tipo: 'Despesa', descricao: 'compra de pão',  dataVencimento: '15/01/2020',  dataPagamento: null, valor: 4.5, pessoa: 'Padaria do José'},
+  {tipo: 'Receita', descricao: 'Venda de Software',  dataVencimento: '20/01/2020',  dataPagamento: null, valor: 8000, pessoa: 'Janaina'}
+  ];
 }
