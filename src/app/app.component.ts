@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   lancamentos = [
-  {tipo: 'Despesa', descricao: 'compra de pão',  dataVencimento: '15/01/2020',  dataPagamento: null, valor: 4.5, pessoa: 'Padaria do José'},
+  {tipo: 'Despesa', descricao: 'Compra de pão',  dataVencimento: '15/01/2020',  dataPagamento: null, valor: 4.5, pessoa: 'Padaria do José'},
   {tipo: 'Receita', descricao: 'Venda de Software',  dataVencimento: '20/01/2020',  dataPagamento: null, valor: 8000, pessoa: 'Janaina'}
   ];
 }
