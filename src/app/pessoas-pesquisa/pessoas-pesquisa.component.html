@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="ui-g">
+        <div class="col-g-12">
+            <h1>Pessoas</h1>
+        </div>
+
+        <div class="ui-g-12 ui-fluid">
+            <label>Nome</label>
+            <input type="text" pInputText />
+        </div>
+
+        <div class="ui-g-12">
+            <button pButton type="submit" label="Pesquisar" ></button>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+
+            <p-table [value]="pessoas">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Status</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-pessoa>
+                    <tr>
+                        <td>{{pessoa.nome}}</td>
+                        <td>{{pessoa.cidade}}</td>
+                        <td>{{pessoa.estado}}</td>
+                        <td *ngIf="pessoa.status === true ? 'Ativo' : 'Inativo' "></td>
+                    </tr>
+                </ng-template>
+            </p-table>
+
+        </div>
+    </div>
+
+</div>
