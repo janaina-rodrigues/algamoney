@@ -12,13 +12,13 @@ label{
 
 @media(min-width: 1200px){
     .container{
-        width: 1170 px;
+        width: 1600px;
         margin: 0 auto;
     }
 }
 .col-valor{
     width: 120px;
-    text-align: right;
+    text-align: center;
 }
 
 .col-data{
