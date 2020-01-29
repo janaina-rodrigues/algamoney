@@ -1,0 +1,165 @@
+- https://jacksongomesbr.gitbooks.io/desenvolvimento-web-front-end-com-angular/conceitos-iniciais/iniciando-com-o-angular.html
+
+- instalar: visual studio code, nodeJs, Angular CLI
+
+- curso angular 8 udemy: https://www.udemy.com/course/angularcompleto/
+
+- Angular tutorial: https://angular.io/tutorial
+
+- visual studio tutorial: https://code.visualstudio.com/docs/nodejs/angular-tutorial
+
+- Biblioteca - PrimeNG
+
+- NodeJS - construir aplicações em java script que rodam no servidor
+   * não precisa do node pra rodar a aplicação, mas é necessário em tempo de desenvolvimento.
+     Quando gera o build não precisa mais do node, roda o java script direto no navegador
+
+- npm - gerenciador de pacotes para java script (como se fosse o maven para java script)
+	* adicionar dependencias no projeto
+
+-> pesquisar diretivas
+* @Host Listener e HostBinding
+
+Angular CLI - ferramenta de linha de comando para criar aplicações angular e ajudar em tarefas repetitivas, como por exemplo criar o projeto.
+ex - cricar componentes, diretivas.
+
+link: https://angular.io/cli
+
+criar novo projeto: ng new nomeProjeto
+
+subir projeto: ng serve
+
+parei 9.13
+
+Componentes:
+-> criar na mão: 
+
+- criar pasta em app com o nome do componente e arquivo nome.component.ts
+
+- quando o template é no maximo 3 linhas usando crase. Escrever no proprio template, sem criar um arquivo html separado.
+
+- declarar componene no app.module.ts : declarations
+
+- adicionar o seletor no app.component.html ex <app-hello></app-hello>
+
+-> criando pelo angular CLI:
+
+- ng generate component ou ng g c nome-componente
+
+para não criar o arquivo de teste unitário colocar o parametro --spec=false
+
+- arquivo app.component.spec.ts: arquivo para testes unitários
+
+
+instalar Bootstrap no projeto:
+
+npm install bootstrap@next --save
+
+adiciona código bootstrap no projeto: 
+
+-> arquivo angular.json em styles add: "./node_modules/bootstrap/dist/css/bootstrap.css"
+
+usar ngModel:
+
+importar modulo FormsModule em app.modules.ts
+
+- diretivas:
+
+-> diretiva estrutural : *ngIf = "adicionado" ou [hidden] = "!adicionado"
+
+-> ngStyle
+
+Event:
+
+EventEmitter - usar decorator @Output
+
+- comunicação de componentes
+
+
+Extensões:
+
+-> tsLint: node_modules/tsli
+   node_modules/tslint/bin/tslint -- project tslint.json
+
+  verificar possíveis erros no projeto
+
+  instalar extensão TsLint
+
+-> .editorConfig 
+
+
+-> HTML Snippets
+
+-> Auto Import - usar ctrl + space para importar .
+
+
+Bibliotecas:
+
+ -> https://material.angular.io/
+
+-> https://ng-bootstrap.github.io/#/home
+
+-> http://angular2-materialize.surge.sh/#/Buttons
+
+-> https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+
+-> https://www.primefaces.org/primeng/#/
+
+
+Instalar PrimeNG:
+seguir a documentaçãoi de instalação
+
+-> npm install primeng --save
+
+-> adicionar fontawesome : dependencia do primeNG 
+fontawesome.io
+
+ou 
+
+-> adicionar primeIcons : dependencia do primeNG (mais atual)
+npm install primeicons --save
+npm install fontawesome --save
+
+
+Erro ao subir servidor: The serve command requires to be run in an Angular project, but a project definition could not be found.
+verificar se está na pasta correta
+
+Estilos globais:
+
+styles.css
+
+Propriedades Css:
+
+"ui-fluid" - campos filhos dessa div ocuparam 100% do espaço
+
+style="display: block"> - label quebrar uma linha
+
+@media - media query - pesquisar
+
+-> Definições
+
+Interpolação: {{ valor }}
+
+associa informação do componente para o template (HTML)
+Property Binding: [propriedade]="valor"
+
+associa informação do componente para o template (HTML)
+Event Binding: (evento)="handler"
+
+associa informação do template (HTML) para o componente
+Two-Way Data Binding: [(ngModel)]="propriedade"
+
+associa informação entre ambos, ou seja, mantém ambos atualizados (componente e template (HTML).
+
+parei video 11.5
+
+
+
+
+
+
+
+
+
+
+
