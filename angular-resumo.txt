@@ -151,10 +151,20 @@ Two-Way Data Binding: [(ngModel)]="propriedade"
 
 associa informação entre ambos, ou seja, mantém ambos atualizados (componente e template (HTML).
 
-parei video 11.5
+-> diretivas
+@HostBinding
 
+@HostListener
 
+exportAs
 
+-> Pipe - muda a saída
+ex: janaina | uppercase,
+    date,
+    number
+    currency - transformador de moedas
+
+https://angular.io/api?query=pipe
 
 
 

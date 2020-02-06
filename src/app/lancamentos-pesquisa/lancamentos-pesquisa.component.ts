@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LancamentosPesquisaComponent {
   lancamentos = [
-    {tipo: 'Despesa', descricao: 'Compra de pão',  dataVencimento: '15/01/2020',
-     dataPagamento: '10/01/2020', valor: 4.5, pessoa: 'Padaria do José'},
-    {tipo: 'Receita', descricao: 'Venda de Software',  dataVencimento: '20/01/2020',
-     dataPagamento: '18/01/2020', valor: 8000, pessoa: 'Janaina'},
-    {tipo: 'Despesa', descricao: 'Compra de Smarphone',  dataVencimento: '28/01/2020',
-     dataPagamento: '20/01/2020', valor: 2500, pessoa: 'Maria'},
-    {tipo: 'Receita', descricao: 'Venda de Carro',  dataVencimento: '28/02/2020',
-     dataPagamento: '20/02/2020', valor: 28000, pessoa: 'José'}
+    {tipo: 'Despesa', descricao: 'Compra de pão',  dataVencimento: new Date(2020, 1, 15) ,
+     dataPagamento:  new Date(2020, 1, 10), valor: 4.5, pessoa: 'Padaria do José'},
+    {tipo: 'Receita', descricao: 'Venda de Software',  dataVencimento: new Date(2020, 1, 20),
+     dataPagamento:  new Date(2020, 1, 18), valor: 8000, pessoa: 'Janaina'},
+    {tipo: 'Despesa', descricao: 'Compra de Smarphone',  dataVencimento: new Date(2020, 1, 28),
+     dataPagamento:  new Date(2020, 1, 20), valor: 2500, pessoa: 'Maria'},
+    {tipo: 'Receita', descricao: 'Venda de Carro',  dataVencimento: new Date(2020, 2, 28),
+     dataPagamento:  new Date(2020, 2, 20), valor: 28000, pessoa: 'José'}
     ];
 
 }
