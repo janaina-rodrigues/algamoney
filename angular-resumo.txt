@@ -29,8 +29,6 @@ criar novo projeto: ng new nomeProjeto
 
 subir projeto: ng serve
 
-parei 9.13
-
 Componentes:
 -> criar na mão: 
 
@@ -166,6 +164,15 @@ ex: janaina | uppercase,
 
 https://angular.io/api?query=pipe
 
+
+-> Formulários
+
+valor padrão de campo? [ngModel]="nome"
+
+exibir json na tela: Objeto | json. ex: Cliente | json
+
+
+12.7
 
 
 
